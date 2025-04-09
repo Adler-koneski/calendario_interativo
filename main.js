@@ -1,7 +1,7 @@
 function colorirDia(){
 
     //pegar valor de campo de dia
-    let days = document.getElementById('days').value;
+    let days = document.getElementById('day').value;
     //pegar valor do campor de cor
     let color = document.getElementById('color').value;
     //pega os elementos da tabela calendario
@@ -16,10 +16,11 @@ function colorirDia(){
        
             //se o numero de dias esta no intervalo 
             //aplicara a cor na celula do calendario 
-            let td = calendar.getElementsByTagName('td');
+            let td = calendar.getElementsByTagName('td')[parseInt(days)+1];
             td.style.backgroundColor = color;
 
-    }else(days > 31){
+    }else if(days > 31)
+    {
 
         alert('favor informar um dia valido!');
 
