@@ -19,7 +19,7 @@ function colorirDia(){
             let td = calendar.getElementsByTagName('td')[parseInt(days)+1];
             td.style.backgroundColor = color;
 
-    }else if(days > 31)
+    }else if(days > 30)
     {
 
         alert('favor informar um dia valido!');
